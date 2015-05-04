@@ -7,6 +7,7 @@
 //
 
 #import "CMAppDelegate.h"
+#import "CMClearViewController.h"
 
 @implementation CMAppDelegate
 
@@ -16,6 +17,9 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[CMClearViewController new]];
+    
     return YES;
 }
 
